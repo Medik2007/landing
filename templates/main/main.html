@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Чарующая Грация</title>
+    <meta name="description" content="Описание в поисковике"/>
+    <meta property="og:title" content="Чарующая Грация"/>
+    <meta property="og:description" content="Описание в соц-сетях"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+    <link rel="stylesheet" type="font/ttf" href="{% static 'fonts/georgia.ttf' %}">
+    <!--<script type="text/javascript" src="{% static 'home.js' %}" defer></script>-->
+</head>
+
+<body>
+    <menu>
+        <div>
+            <img src="{% static 'logo.svg' %}">
+        </div>
+        <nav>
+            <p>О НАС</p>
+            <p>КАТАЛОГ</p>
+            <p>КОНТАКТЫ</p>
+        </nav>
+    </menu>
+</body>
+</html>
