@@ -9,20 +9,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
-    <link rel="stylesheet" type="font/ttf" href="{% static 'fonts/georgia.ttf' %}">
     <!--<script type="text/javascript" src="{% static 'home.js' %}" defer></script>-->
 </head>
 
 <body>
-    <menu>
-        <div>
+    <header>
+        <div id="logo">
             <img src="{% static 'logo.svg' %}">
+            <div id="logo-text">
+                <p>Чарующая</p>
+                <p>Грация</p>
+            </div>
         </div>
         <nav>
             <p>О НАС</p>
             <p>КАТАЛОГ</p>
             <p>КОНТАКТЫ</p>
         </nav>
-    </menu>
+    </header>
+    <main>
+        <div id="name">
+            <div id="name-text">
+                <h2>Свадебные и вечерние платья</h2>
+                <h1>Чарующая Грация</h1>
+                <button><p>Подробнее</p></button>
+            </div>
+            <img src="{% static 'name.png' %}">
+        </div>
+        <div id="about">
+            <img src="{% static 'about.png' %}">
+            <div id="about-text">
+                <div>
+                    <p>Наши платья - это не просто одежда</p>
+                    <h1>О нас</h1>
+                </div>
+                <div>
+                    <p>Это произведения искусства, которые  рождаются в результате бесконечного поиска, творческих экспериментов и  стремления к совершенству на собственном производстве.</p>
+                    <p>Нам важно создать для Вас легкую, уютную и непринужденную атмосферу, чтобы выбор платья стал незабываемым моментом.</p>
+                </div>
+                <p>Индивидуальный пошив.</p>
+                <div>
+                    <p>Оптовые продажи от 3х единиц, подберем свадебные и вечерние платья для вашего салона из наличия или под заказ.</p>
+                    <p>Вас ждёт интересный выбор платьев по привлекательным ценам.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
