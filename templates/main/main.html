@@ -14,9 +14,9 @@
 
 <body>
     <header>
-        <div id="logo">
+        <div class="logo">
             <img src="{% static 'logo.svg' %}">
-            <div id="logo-text">
+            <div class="logo-text">
                 <p>Чарующая</p>
                 <p>Грация</p>
             </div>
@@ -100,16 +100,41 @@
                     <p>г. Тамбов,</p>
                     <p>ул Коммунальная,</p>
                     <p>21А/29</p>
-                    <h2>Телефон</h2>
+                    <h2 id="phone">Телефон</h2>
                     <p>+7 910 853-47-77</p>
                     <div id="cont-icons">
-                        <img src="{% static 'vk.svg' %}">
-                        <img src="{% static 'inst.svg' %}">
+                        <a href=""><img id="vk" src="{% static 'vk.svg' %}"></a>
+                        <a href=""><img id="inst" src="{% static 'inst.svg' %}"></a>
                     </div>
                 </div>
                 <img id="map" src="{% static 'map.png' %}">
             </div>
         </div>
     </main>
+    <footer>
+        <div id="footer-name">
+            <div class="logo">
+                <img src="{% static 'logo.svg' %}">
+                <div class="logo-text">
+                    <p>Чарующая</p>
+                    <p>Грация</p>
+                </div>
+            </div>
+            <h2>(C) 2024 "Чарующая Грация"</h2>
+        </div>
+        <div id="footer-info">
+            <nav>
+                <p>О НАС</p>
+                <p>КАТАЛОГ</p>
+                <p>КОНТАКТЫ</p>
+            </nav>
+            <h2>г Тамбов, ул Коммунальная, 21А/29</h2>
+            <div>
+                <h2>+7 910 853-47-77</h2>
+                <a href=""><img id="vk" src="{% static 'vk.svg' %}"></a>
+                <a href=""><img id="inst" src="{% static 'inst.svg' %}"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
