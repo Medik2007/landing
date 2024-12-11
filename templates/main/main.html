@@ -90,6 +90,10 @@
                         </div>
                     </div>
                 </div>
+                <a href="" id="arrow">
+                    <p>Все</p>
+                    <img src="{% static 'arrow.svg' %}">
+                </a>
             </div>
         </div>
         <div id="cont">
@@ -112,27 +116,29 @@
         </div>
     </main>
     <footer>
-        <div id="footer-name">
-            <div class="logo">
-                <img src="{% static 'logo.svg' %}">
-                <div class="logo-text">
-                    <p>Чарующая</p>
-                    <p>Грация</p>
+        <div id="footer">
+            <div id="footer-name">
+                <div class="logo">
+                    <img src="{% static 'logo_white.svg' %}">
+                    <div class="logo-text">
+                        <p>Чарующая</p>
+                        <p>Грация</p>
+                    </div>
                 </div>
+                <p id="footer-p">(C) 2024 "Чарующая Грация"</p>
             </div>
-            <h2>(C) 2024 "Чарующая Грация"</h2>
-        </div>
-        <div id="footer-info">
-            <nav>
-                <p>О НАС</p>
-                <p>КАТАЛОГ</p>
-                <p>КОНТАКТЫ</p>
-            </nav>
-            <h2>г Тамбов, ул Коммунальная, 21А/29</h2>
-            <div>
-                <h2>+7 910 853-47-77</h2>
-                <a href=""><img id="vk" src="{% static 'vk.svg' %}"></a>
-                <a href=""><img id="inst" src="{% static 'inst.svg' %}"></a>
+            <div id="footer-info">
+                <nav>
+                    <p>О НАС</p>
+                    <p>КАТАЛОГ</p>
+                    <p>КОНТАКТЫ</p>
+                </nav>
+                <p>г Тамбов, ул Коммунальная, 21А/29</p>
+                <div>
+                    <p>+7 910 853-47-77</p>
+                    <a id="vk-a" href=""><img src="{% static 'vk_white.svg' %}"></a>
+                    <a id="inst-a" href=""><img src="{% static 'inst_white.svg' %}"></a>
+                </div>
             </div>
         </div>
     </footer>

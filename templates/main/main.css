@@ -8,6 +8,10 @@ body {
     font-family: georgia;
     src: url('../static/fonts/georgia.ttf');
 }
+a {
+    text-decoration: none;
+    color: #571A1B;
+}
 
 
 header {
@@ -15,7 +19,8 @@ header {
     flex-direction: row;
     width: 65%;
     height: fit-content;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -23,9 +28,8 @@ header {
 .logo {
     display: flex;
     flex-direction: row;
-    img {
-        width: 55px;
-    }
+    p { font-size: 18px; }
+    img { width: 55px; }
     .logo-text {
         display: flex;
         flex-direction: column;
@@ -37,7 +41,14 @@ nav {
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    gap: 100px;
+    width: 45%;
+    p {
+        margin-left: auto;
+        font-size: 18px;
+    }
+    p:first-of-type {
+        margin-left: 0;
+    }
 }
 
 
@@ -59,7 +70,7 @@ main {
             h2 { font-size: 40px; }
             h1 { font-size: 80px; }
             button {
-                margin-top: 5px;
+                margin-top: 10px;
                 font-family: georgia;
                 font-size: 25px;
                 width: fit-content;
@@ -139,6 +150,17 @@ main {
             width: 100%;
             display: flex;
             flex-direction: row;
+            p { font-size: 28px; }
+            #arrow {
+                right: 12%;
+                margin-top: 200px;
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                img {width: 40px;}
+                p {font-size: 24px;}
+            }
             .element {
                 width: 100%;
                 img {
@@ -154,7 +176,6 @@ main {
                     width: calc(90% - 100px);
                     height: fit-content;
                     align-items: center;
-                    p { font-size: 28px; }
                     .colors {
                         display: flex;
                         flex-direction: row-reverse;
@@ -218,6 +239,46 @@ main {
                 width: 525px;
                 margin-left: auto;
                 border-radius: 20px;
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: #D0BCB9;
+    #footer {
+        height: 180px;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        #footer-name {
+            .logo { margin-top: 20px; }
+            #footer-p { margin-top: 10px; }
+        }
+        #footer-info {
+            width: 45%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            nav {
+                margin-left: 0;
+                width: 100%;
+            }
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: fit-content;
+                gap: 10px;
+                p {margin-right: auto; margin-bottom: auto;}
+                #vk-a img {height: 35px;}
+                #inst-a img {height: 40px;}
             }
         }
     }
