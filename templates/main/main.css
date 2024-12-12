@@ -98,22 +98,21 @@ main {
         flex-direction: row;
         margin-top: 60px;
         width: 100%;
+        height: 100vh;
         background-color: #D0BCB9;
         color: white;
-        img {
-            height: 100vh;
-        }
         #about-text {
             width: 80%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 80px;
             div {
+                margin-top: auto;
+                margin-bottom: auto;
                 display: flex;
                 flex-direction: row;
-                width: 77%;
+                width: 80%;
                 gap: 80px;
                 p {
                     font-size: 24px;
@@ -127,7 +126,6 @@ main {
                 }
             }
             #main-about-text {
-                align-items: end;
                 p {
                     width: 20%;
                 }
@@ -152,9 +150,8 @@ main {
             flex-direction: row;
             p { font-size: 28px; }
             #arrow {
-                right: 12%;
                 margin-top: 200px;
-                position: absolute;
+                height: fit-content;
                 display: flex;
                 flex-direction: row;
                 gap: 10px;
@@ -165,17 +162,17 @@ main {
                 width: 100%;
                 img {
                     width: 90%;
-                    border-radius: 50px;
+                    border-radius: 10%;
                 }
                 .info {
                     margin-top: 8px;
                     display: flex;
                     flex-direction: row;
-                    margin-left: 50px;
-                    margin-right: 50px;
-                    width: calc(90% - 100px);
+                    margin-left: 10%;
+                    width: calc(90% - 20%);
                     height: fit-content;
                     align-items: center;
+                    p { font-size: 24px; }
                     .colors {
                         display: flex;
                         flex-direction: row-reverse;
@@ -283,6 +280,61 @@ footer {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1270px) {
+header {
+    width: 80%;
+}
+main {
+    #name {
+        width: 80%;
+    }
+    #about {
+        img {
+            margin-left: -20vh;
+        }
+    }
+    #catal {
+        width: 80%;
+        #list .element .info .colors .col {
+            width: 28px;
+            height: 28px;
+        }
+    }
+    #cont {
+        width: 80%;
+    }
+}
+footer #footer {
+    width: 80%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
